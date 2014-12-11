@@ -1,8 +1,22 @@
 # Object files
+.*
 *.o
 *.ko
 *.obj
 *.elf
+*.o.*
+*.s
+*.mod.c
+*.i
+*.lst
+*.symtypes
+*.order
+modules.builtin
+*.gz
+*.lzma
+*.xz
+*.lzo
+*.orig
 
 # Precompiled Headers
 *.gch
@@ -27,3 +41,39 @@
 *.i*86
 *.x86_64
 *.hex
+
+#
+# Top-level generic files
+#
+/tags
+/TAGS
+/linux
+/vmlinux
+/vmlinuz
+/System.map
+/Module.markers
+/Module.symvers
+
+#
+# git files that we don't want to ignore even it they are dot-files
+#
+!.gitignore
+!.mailmap
+
+#
+# Generated include files
+#
+include/config
+include/linux/version.h
+include/generated
+arch/*/include/generated
+
+# cscope files
+cscope.*
+ncscope.*
+
+# gnu global files
+GPATH
+GRTAGS
+GSYMS
+GTAGS
